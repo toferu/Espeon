@@ -1,5 +1,7 @@
 *{
 box-sizing: border-box;
+padding: 0;
+margin: 0;
 }
 
 :root {
@@ -37,61 +39,193 @@ main {
     padding: 1rem;
 }
 
-.navbar {
-    width: 5rem;
-    height: 100vh;
+body {
+   position: relative;
+   height: 1000vh; 
+}
+
+header {
     position: fixed;
-    background-color: var(--bg-primary);
-    /* transition: width 500ms ease; */
-}
-
-.navbar-container {
-    height: 90%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-item {
+    top: 0;
     width: 100%;
+    background-color: #98dbc6;
 }
 
-.nav-item:last-child {
-    margin-top: auto;
+li {
+    list-style-type: none;
 }
 
-.nav-link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: var(--text-primary);
+a {
+    color: black;
     text-decoration: none;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: black;
+}
+
+#home {
+    margin-top: 70px;
+
+}
+
+@media(max-width: 1600px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px){
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    iframe {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+/* 
+.resume {
+    text-align: center;
+} deprecated this class */
+
+.modal {
+	/* background-color: rgba(0,0,0,0.4); */
+	position: fixed;
+	top: 12em;
+	left: 5em;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+    /* margin: 150px auto; */
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+h1 {
+	padding-bottom: 15px;
+}
+
+.modal-buttons {
+	padding: 14px 18px;
+	border: none;
+	cursor: pointer;
     
 }
 
-.link-text {
-    /* display: none; */
-    filter: grayscale(100%) opacity(0.7) blur(1.5 rem) hue-rotate(90deg);
-    transition: var(--transition-speed);
-
-    margin-left: 1rem;
+#iframe-button {
+    display: flex;
+    justify-content: column;
+    align-content: flex-end;
+    z-index: 1;
+    background-color: #677996;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
 }
 
-.link-text:hover {
-    width: 100%;
-    height: 2.4em;
-    filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color: var(--text-secondary)
+#frame-container {
+    position: relative;
+    width:90%;
+    height: 90%;
+    display: flex;
+ 
 }
 
-.navbar:hover {
-    filter: grayscale(0%) opacity(1);
-    /* width: 12rem; */
+#iframe-button {
+    display: relative;
+    font-variant-position: super;
+    top: 15%;
+    left: 15%;
 }
 
-.navbar:hover .link-text {
-    display: block;
+#frame-container:hover #iframe-button {
+    display: initial;
 }
+
+iframe {
+    /* display: block; */
+    
+    width: 500px;
+    height: 695px;
+    margin: 0 auto;
+    justify-content: center;
+}
+/* width="640" height="695" */

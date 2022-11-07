@@ -34,7 +34,14 @@ a {
     margin: auto;
 }
 
+.nav-name {
+    color: #98dbc6;
+    height: 3.5em;
+    width: 6em;
+}
+
 .navbar {
+    /* background-color: #98dbc6; */
     width: 100%;
     min-height: 70px;
     display: flex;
@@ -43,6 +50,7 @@ a {
 }
 
 .nav-menu {
+    background-color: #98dbc6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,6 +78,24 @@ a {
 #home {
     margin-top: 70px;
 
+}
+
+.link-container {
+    border-top: .5em solid black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+
+.icons {
+    height: 3em;
+    width: 3em;
+    
+}
+
+.icons:hover {
+    fill: #98dbc6;
 }
 
 @media(max-width: 1600px){
@@ -112,8 +138,93 @@ a {
         left: 0;
     }
 
+    #frame-container iframe {
+        justify-content: center;
+        /* padding-bottom: 75%; */
+        width: 75vw;
+        height: 55vh;
+        
+        
+    }
+
+    .icons:hover {
+        fill: #98dbc6;
+    }
 }
 
+/* 
 .resume {
     text-align: center;
+} deprecated this class */
+
+.modal {
+	/* background-color: rgba(0,0,0,0.4); */
+	position: fixed;
+	top: 12em;
+	left: 5em;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+    /* margin: 150px auto; */
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
 }
+
+
+
+h1 {
+	padding-bottom: 15px;
+}
+
+.modal-buttons {
+	padding: 14px 18px;
+	border: none;
+	cursor: pointer;
+    
+}
+
+/* #iframe-button {
+    display: flex;
+    justify-content: column;
+    align-content: flex-end;
+    z-index: 1;
+    background-color: #677996;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+} */
+
+#frame-container {
+    /* position: fixed; */
+    width:90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+/* #iframe-button {
+    display: relative;
+    font-variant-position: super;
+    top: 15%;
+    left: 15%;
+}
+
+#frame-container:hover #iframe-button {
+    display: initial;
+} */
+
+iframe {
+    /* display: block; */
+    /* top: ; */
+    width: 500px;
+    height: 595px;
+    margin: 0 auto;
+    justify-content: center;
+    object-fit: contain;
+}
+/* width="640" height="695" */
