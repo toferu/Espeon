@@ -1,54 +1,19 @@
 *{
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-}
-
-:root {
-   font-size: 18px;
-   font-family: 'Open Sans';
-   --text-primary: #FFBA49;
-   --text-secondary: #EF5B5B;
-   --bg-primary: #20A39E;
-   --bg-secondary: #A4A9AD;
-   --transition-speed: 200ms;
-}
-
-body {
-    color: black;
-    background-color: white;
-    margin: 0;
     padding: 0;
-}
-
-body::-webkit-scrollbar {
-    width: 0.25rem;
-
-}
-
-body::-webkit-scrollbar-track {
-    background: black;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: purple;
-}
-
-main {
-    margin-left: 5rem;
-    padding: 1rem;
+    margin: 0;
 }
 
 body {
    position: relative;
-   height: 1000vh; 
+   height: 100vh; 
+   /* background-color: #eef5db; */
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #98dbc6;
+    background-color: #B8D8D8;
 }
 
 li {
@@ -56,12 +21,16 @@ li {
 }
 
 a {
-    color: black;
+    color: #FE5F55;
     text-decoration: none;
 }
 
 .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 1600px;
+    padding: 10px;
     margin: auto;
 }
 
@@ -70,7 +39,14 @@ a {
     margin: auto;
 }
 
+.nav-name {
+    /* color: #7A9E9F; */
+    height: 3.5em;
+    width: 6em;
+}
+
 .navbar {
+    
     width: 100%;
     min-height: 70px;
     display: flex;
@@ -79,6 +55,7 @@ a {
 }
 
 .nav-menu {
+    background-color: #7A9E9F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +70,7 @@ a {
     display: none;
     cursor: pointer;
 }
-
+/* Got this from codefoxx youtube video https://www.youtube.com/watch?v=zuAmsj2EN54 */
 .bar {
     display: block;
     width: 25px;
@@ -105,7 +82,29 @@ a {
 
 #home {
     margin-top: 70px;
+   
+}
 
+/* .container .bio {
+    z-index: -2;
+} */
+
+.link-container {
+    border-top: .5em solid black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+
+.icons {
+    height: 3em;
+    width: 3em;
+    
+}
+
+.icons:hover {
+    fill: #FE5F55;
 }
 
 @media(max-width: 1600px){
@@ -148,12 +147,66 @@ a {
         left: 0;
     }
 
-    iframe {
-        width: 100px;
-        height: 100px;
+    #frame-container iframe {
+        justify-content: center;
+        /* padding-bottom: 75%; */
+        width: 75vw;
+        height: 55vh;
+        
+        
+    }
+/* Trying to see if I can get some sort of feedback on mobile tap */
+    .icons:target {
+        fill:#98dbc6;
     }
 
+    .icons:active {
+        background-color: #98dbc6;
+    }
+
+    /* #profile-pic:active {
+        filter:hue-rotate(145deg);
+    } */
 }
+
+#profile-pic {
+    border-radius: 1em;
+    justify-content: center;
+    margin-top: 9em;
+    margin-bottom: 2.4em;
+    width: 20em;
+    height: auto;
+    /* filter: revert; */
+    /*this causes a bug where the image overlaps the nav-bar. z-index on the img container does not appear to fix */
+    
+}
+
+/* #profile-pic:hover {
+    filter: grayscale(80%);
+    filter: hue-rotate(145deg);
+    
+    
+} */
+
+#landscaper {
+    width: 16em;
+    height: auto;
+    margin-bottom: 2.2em;
+}
+
+#landscaper:hover {
+    transform: scale(1.2);
+}
+
+.proj {
+    border-top: .5em solid black;
+    
+}
+
+
+/* .img-link:hover {
+   filter:drop-shadow(30px 10px 4px #4444dd);
+} */
 
 /* 
 .resume {
@@ -163,8 +216,8 @@ a {
 .modal {
 	/* background-color: rgba(0,0,0,0.4); */
 	position: fixed;
-	top: 12em;
-	left: 5em;
+	top: 6em;
+	left: 2em;
 	height: 100%;
 	width: 100%;
 	z-index: 0;
@@ -176,7 +229,11 @@ a {
     /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
 }
 
-
+p {
+    
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 h1 {
 	padding-bottom: 15px;
@@ -189,7 +246,7 @@ h1 {
     
 }
 
-#iframe-button {
+/* #iframe-button {
     display: flex;
     justify-content: column;
     align-content: flex-end;
@@ -199,17 +256,18 @@ h1 {
 	border-radius: 3px;
 	color: white;
 	font-family: 'Arial';
-}
+} */
 
 #frame-container {
-    position: relative;
+    /* position: fixed; */
     width:90%;
     height: 90%;
     display: flex;
+    justify-content: center;
  
 }
 
-#iframe-button {
+/* #iframe-button {
     display: relative;
     font-variant-position: super;
     top: 15%;
@@ -218,14 +276,15 @@ h1 {
 
 #frame-container:hover #iframe-button {
     display: initial;
-}
+} */
 
 iframe {
     /* display: block; */
-    
+    /* top: ; */
     width: 500px;
-    height: 695px;
+    height: 595px;
     margin: 0 auto;
     justify-content: center;
+    object-fit: contain;
 }
 /* width="640" height="695" */

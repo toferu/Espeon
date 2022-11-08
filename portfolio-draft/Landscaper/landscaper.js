@@ -166,7 +166,7 @@ $( () => {
     }
 
     const retireNow = () => {
-        // alert('It is too bad that you gave up. Play again next time!', $(<button href="">Go Back</button>))
+        alert('It is too bad that you gave up. Play again next time!')
         location.reload()
     }
 
