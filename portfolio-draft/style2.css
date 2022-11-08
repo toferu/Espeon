@@ -84,6 +84,10 @@ a {
    
 }
 
+/* .container .bio {
+    z-index: -2;
+} */
+
 .link-container {
     border-top: .5em solid black;
     display: flex;
@@ -150,17 +154,56 @@ a {
         
         
     }
+/* Trying to see if I can get some sort of feedback on mobile tap */
+    .icons:target {
+        fill:#98dbc6;
+    }
 
+    .icons:active {
+        background-color: #98dbc6;
+    }
+
+    #profile-pic:active {
+        filter:hue-rotate(145deg);
+    }
 }
 
 #profile-pic {
-    
+    border-radius: 1em;
     justify-content: center;
     margin-top: 9em;
     margin-bottom: 2.4em;
     width: 20em;
     height: auto;
+    filter: revert;
+    /*this causes a bug where the image overlaps the nav-bar. z-index on the img container does not appear to fix */
+    
 }
+
+#profile-pic:hover {
+    /* filter: grayscale(80%); */
+    filter: hue-rotate(145deg);
+    
+    
+}
+
+#landscaper {
+    width: 16em;
+    height: auto;
+    margin-bottom: 2.2em;
+}
+
+#landscaper:hover {
+    transform: scale(1.2);
+}
+
+.proj {
+    border-top: .5em solid black;
+}
+
+/* .img-link:hover {
+   filter:drop-shadow(30px 10px 4px #4444dd);
+} */
 
 /* 
 .resume {
@@ -170,8 +213,8 @@ a {
 .modal {
 	/* background-color: rgba(0,0,0,0.4); */
 	position: fixed;
-	top: 12em;
-	left: 5em;
+	top: 6em;
+	left: 2em;
 	height: 100%;
 	width: 100%;
 	z-index: 0;
@@ -183,7 +226,11 @@ a {
     /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
 }
 
-
+p {
+    /* display: inline-block; */
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 h1 {
 	padding-bottom: 15px;

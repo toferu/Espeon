@@ -18,3 +18,19 @@ for keeping my thoughts organized for now
 5.welcome page animation
 
 6.toggle themes?
+
+
+///////new to do/////
+1.change nav bar links to auto scroll down functionality
+
+2.make landscaper thumbnail a link to landscaper
+
+3.put landscaper in modal? nah. add home button and nav to landscaper page? yes
+
+4.make content appear and move up when scrolling down?
+
+5.make a welcome splash page?
+
+6.make things aesthetic
+
+7.make sure to add names of collaborators on landscaper
