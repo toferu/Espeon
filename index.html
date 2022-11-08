@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./portfolio-draft/app.js"></script>
     <link rel="stylesheet" href="./portfolio-draft/style.css">
@@ -17,13 +20,14 @@
                   <a id="nav-name"><h3>Christopher Anderson</h3></a>
                     <ul class ="nav-menu"> 
                         <li class="nav-item">
-                            <a class="nav-link" id="projects-button">Projects</a>
+                            <a href="./portfolio-draft/Landscaper/index.html" class="nav-link projects-button">Projects</a>
                         </li>
                         <li class="nav-item">
+                            <!-- Shouldve just made this an anchor at this point and changed class back to nav-link -->
                             <button class="modal-buttons" id="openModal">Resume</button>
                         </li>
                         <li class="nav-item">
-                            <button id="link-button" class="nav-link" >Links</button>
+                            <a id="link-button" class="nav-link">Links</an>
                         </li>
                     </ul>
                     <div class="hamburger">
@@ -39,7 +43,7 @@
     <section id="home">
         
         <div class="container bio">
-            <h1> Welcome to my page!</h1>
+            <!-- <h1> Welcome to my page!</h1> -->
             <img id="profile-pic" src="./portfolio-draft/images/IMG_20221106_210547_790.jpg">
                 <h1> Hi, I'm Christopher!</h1>
                 <!-- <h4>I am an artist and tech enthusiast</h4> -->

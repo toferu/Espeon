@@ -2,7 +2,7 @@
 
 
 
-
+//this was also from that youtube but i changed it to jquery
 
 $( () => {
     //////Hamburglar Event Handler///////
@@ -41,12 +41,13 @@ $( () => {
        }     
     });
     
-    let $projects = $('#projects')
+    // let $projects = $('#projects')
     //scroll to div//
     // const $projButton = $('.projects-button')
     
   //hide bio
   //scrollup 
+  //learned this from a stack overflow question and jquery doc examples
   const $scrollDown = () => {
     $('html, body').animate({
         scrollTop: $(document).height()}, 1000);
@@ -59,22 +60,22 @@ $( () => {
      
   }
 
-  const $scrollProj = () => {
-    $('html, #projects').scrollTop(600)
+//   const $scrollProj = () => {
+//     $('html, #projects').scrollTop(600)
 
-  }
+//   }
 
   const $linkButton = $('#link-button')
 
   const $homeButton = $('#nav-name')
     
-  const $projButton = $('#projects-button')
+//   const $projButton = $('#projects-button')
 
   $linkButton.on('click',$scrollDown)
   
   $homeButton.on('click', $scrollUp)
 
-  $projButton.on('click',$scrollProj)
+//   $projButton.on('click',$scrollProj)
     
 })
     

@@ -215,4 +215,36 @@ $( () => {
 
     // when the retire button is clicked refresh page.
     $('#retire').on('click', retireNow)
+
+
+    // //////Hamburglar Event Handler///////
+    //     const $hamburger = $('.hamburger');
+    //     const $navMenu = $('.nav-menu');
+        
+    //     $hamburger.on('click', () => {
+    //         $hamburger.toggleClass('active')
+    //         $navMenu.toggleClass('active')
+    //     })
+    const $openBtn = $('#open-modal');
+    const $modal = $('#modal');
+    const $closeBtn = $('#close-button');
+    
+    
+    const openModal = () => {
+        $modal.css('display', 'block');
+    }
+    const closeModal = () => {
+        $modal.css('display', 'none');
+    }
+    
+    
+    $openBtn.on('click', openModal);
+    $closeBtn.on('click', closeModal);
+    
+    $('body').on('click',(event) => 
+    {
+       if(!$(event.target).is('#open-modal')) {
+         $("#modal").hide();
+       }     
+    });
 })

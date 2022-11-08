@@ -1,36 +1,37 @@
-This is going to be a placeholder text doc
-for keeping my thoughts organized for now
+This is my first draft for a portfolio website!
+
+I used jquery for all DOM manipulation.
+
+It has modals!
+
+It has auto scrolling!
+
+It has a responsive navbar!
 
 
-1.got the burger done
--however i want to tweak the media query sizes
--gotta figure out why i'm not getting bg color for links on click
+This was quite a challenge mostly due to the CSS.
+I have a background in art, but not a concentration on web design and honestly:
 
-2.let's do carousel
+CSS makes me hate visual design.
 
-3.toss some text in
--resume
--bio
--short synopsis of projects
+But I'd like to be much better at it! I would love for it to feel natural instead of clunky.
 
-4.toggle that text?
+My initial approach was going to include a carousel, but I realized I only had
+one visually interesting project to display. This also caused me to spend too much time researching how to flesh out one of my other lil projects: the Pizza Picker. The Pizza Picker is just an array of pizza places and one is picked at random for you. I was trying to make it more dynamic by integrating it with the Google Custom Search API. It would ask for a zip code, append "pizza" to the search in the background, and fill the array with the first 10-15 results, then run the dice roll. But I digress...
 
-5.welcome page animation
+So, I strayed pretty far and hard from my initial idea. I could have added some paintings or digital art to a carousel, but I felt this portfolio needed to focus on my future as a software engineer. 
 
-6.toggle themes?
+I also intended on having an animated SVG, but trying to design something good and put together the website proved too much work for me at this point in time. Maybe if I'm smarter and faster in the future..I can only hope.
 
+Unsolved Issues: 
 
-///////new to do/////
-1.change nav bar links to auto scroll down functionality
+-I couldn't think of a clever way to have sections or text hide or slowly transition in to place. My few experiments with it had mixed results.
 
-2.make landscaper thumbnail a link to landscaper
+-I wasted hours trying to get a close button to display with the modal that has an iframe embedded inside. The iframe was pretty much a disaster, but I thought it would look great to have the resume be a pdf and just couldn't let go of it. I made a workaround where you just click outside of the iframe (as long as you don't click the resume button either) and it closes. Doesn't look great on mobile either.
 
-3.put landscaper in modal? nah. add home button and nav to landscaper page? yes
+-I messed around with adding filters to the images, but ran in to an issue where they would sit atop the fixed navbar on scrolling if the filter was on (filter was set to display on hover). Had too many other fires to put out to dig deeper in to fixing this.
 
-4.make content appear and move up when scrolling down?
+Honestly I hate this site. I'm sure you will too. There's nothing visually appealing about it. It's boring and has a severe aesthetic deficiency. 
+Please be gentle in your evaluation. I tried to make sure to cite things appropriately when borrowed from others. If you need more resources I have probably fifty or so pages of search history I can append.
 
-5.make a welcome splash page?
-
-6.make things aesthetic
-
-7.make sure to add names of collaborators on landscaper
+Also I was going to look in to properly formatting markdown, but didn't have time for that either. I'm very slow and not good at this.

@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    color: #4F6367;
 }
 
 body {
@@ -63,11 +64,16 @@ a {
 .nav-link {
     /* background-color: #eef5db; */
     color: #FE5F55;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
 }
 
 .nav-branding {
     font-size: 2rem;
 }
+
+
 
 .hamburger {
     display: none;
@@ -195,6 +201,7 @@ a {
     width: 16em;
     height: auto;
     margin-bottom: 2.2em;
+    
 }
 
 #landscaper:hover {
@@ -203,6 +210,7 @@ a {
 
 .proj {
     border-top: .5em solid black;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -236,6 +244,8 @@ a {
     background: none;
     /* background-color: #eef5db; */
     color: #FE5F55;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
 }
 
 p {
@@ -249,7 +259,7 @@ h1 {
 }
 
 .modal-buttons {
-	padding: 14px 18px;
+	/* padding: 14px 18px; */
 	border: none;
 	cursor: pointer;
     
@@ -296,4 +306,3 @@ iframe {
     justify-content: center;
     object-fit: contain;
 }
-/* width="640" height="695" */
