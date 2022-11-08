@@ -39,10 +39,8 @@ a {
     margin: auto;
 }
 
-.nav-name {
-    /* color: #7A9E9F; */
-    height: 3.5em;
-    width: 6em;
+#nav-name {
+   cursor: pointer;
 }
 
 .navbar {
@@ -55,11 +53,16 @@ a {
 }
 
 .nav-menu {
-    background-color: #7A9E9F;
+    background-color: #b8d8d8;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+}
+
+.nav-link {
+    /* background-color: #eef5db; */
+    color: #FE5F55;
 }
 
 .nav-branding {
@@ -85,9 +88,9 @@ a {
    
 }
 
-/* .container .bio {
-    z-index: -2;
-} */
+.container .bio h1 {
+    margin-top: 14em;
+}
 
 .link-container {
     border-top: .5em solid black;
@@ -172,7 +175,7 @@ a {
 #profile-pic {
     border-radius: 1em;
     justify-content: center;
-    margin-top: 9em;
+    margin-top: 2em;
     margin-bottom: 2.4em;
     width: 20em;
     height: auto;
@@ -227,6 +230,12 @@ a {
 	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
 	display: none;
     /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.modal-buttons {
+    background: none;
+    /* background-color: #eef5db; */
+    color: #FE5F55;
 }
 
 p {

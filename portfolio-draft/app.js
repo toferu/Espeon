@@ -5,7 +5,7 @@
 
 
 $( () => {
-    //////Hamburger Event Handler///////
+    //////Hamburglar Event Handler///////
     const $hamburger = $('.hamburger');
     const $navMenu = $('.nav-menu');
     
@@ -14,11 +14,12 @@ $( () => {
         $navMenu.toggleClass('active')
     })
     
-    ////////Modal Operation////////
+    /////Modal Operation (from class exercise)/////
     
     
     const $openBtn = $('#openModal');
     const $modal = $('.modal');
+    //there is no close button
     const $closeBtn = $('#iframe-button');
     
     
@@ -42,10 +43,38 @@ $( () => {
     
     let $projects = $('#projects')
     //scroll to div//
-    const $projButton = $('.projects-button')
+    // const $projButton = $('.projects-button')
     
+  //hide bio
+  //scrollup 
+  const $scrollDown = () => {
+    $('html, body').animate({
+        scrollTop: $(document).height()}, 1000);
+        
+  }
+
+  const $scrollUp = () => {
+    $('html, body').animate({scrollTop: 0
+    }, 1200);
+     
+  }
+
+  const $scrollProj = () => {
+    $('html, #projects').scrollTop(600)
+
+  }
+
+  const $linkButton = $('#link-button')
+
+  const $homeButton = $('#nav-name')
     
+  const $projButton = $('#projects-button')
+
+  $linkButton.on('click',$scrollDown)
+  
+  $homeButton.on('click', $scrollUp)
+
+  $projButton.on('click',$scrollProj)
     
-    
-    })
+})
     
