@@ -33,8 +33,3 @@ Unsolved Issues:
 -I wasted hours trying to get a close button to display with the modal that has an iframe embedded inside. The iframe was pretty much a disaster, but I thought it would look great to have the resume be a pdf and just couldn't let go of it. I made a workaround where you just click outside of the iframe (as long as you don't click the resume button either) and it closes. Doesn't look great on mobile either.
 
 -I messed around with adding filters to the images, but ran in to an issue where they would sit atop the fixed navbar on scrolling if the filter was on (filter was set to display on hover). Had too many other fires to put out to dig deeper in to fixing this.
-
-Honestly I hate this site. I'm sure you will too. There's nothing visually appealing about it. It's boring and has a severe aesthetic deficiency. 
-Please be gentle in your evaluation. I tried to make sure to cite things appropriately when borrowed from others. If you need more resources I have probably fifty or so pages of search history I can append.
-
-Also I was going to look in to properly formatting markdown, but didn't have time for that either. I'm very slow and not good at this.
