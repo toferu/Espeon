@@ -20,7 +20,7 @@
                   <a id="nav-name"><h3>Christopher Anderson</h3></a>
                     <ul class ="nav-menu"> 
                         <li class="nav-item">
-                            <a href="./portfolio-draft/Landscaper/index.html" class="nav-link projects-button">Projects</a>
+                            <a id="project-button" class="nav-link projects-button">Projects</a>
                         </li>
                         <li class="nav-item">
                             <!-- Shouldve just made this an anchor at this point and changed class back to nav-link -->
@@ -47,17 +47,58 @@
             <img id="profile-pic" src="./portfolio-draft/images/IMG_20221106_210547_790.jpg">
                 <h1> Hi, I'm Christopher!</h1>
                 <!-- <h4>I am an artist and tech enthusiast</h4> -->
-            <p>I am an artist and tech enthusiast based in Chattanooga, Tennessee. I have professional experience in architectural surveying. Specifically in reality capture via lidar, photogrammetry and the point cloud registration and modeling of that data. I recently decided to make the transition in to software engineering and enrolled in General Assembly's software engineering immersive program. In my spare time I enjoy playing video games, biking, rock climbing, and disc golf.</p>
+            <p>As a newly certified junior developer, I am eager to apply my new array (pun intended) of knowledge to building awesome applications. I am an imaginative and perceptive thinker with a knack for problem solving. With my expansive interests and passion for knowledge, I have cultivated numerous valuable and diverse skill-sets that make me an asset to any team. Through hard-work, flexibility, and resourcefulness I have received accolades for my creative achievements and exceptional results in both professional and scholarly endeavors. I am amiable, encouraging, and comfortable leading others in collaborative environments. When I'm not working you can find me outside on my bike, rock climbing, or playing disc golf. </p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container proj">
             <h1>Projects</h1>
-            <a class="img-link" href="./portfolio-draft/Landscaper/index.html"> 
-            <img id="landscaper" src="./portfolio-draft/images/Screen Shot 2022-11-06 at 10.43.23 PM.png"></a>
-            <h2>Landscaper</h2>
-            <p>This is a browser based landscaping sim that started as a terminal based game. It was developed with the help of fellow participants in the General Assembly cohort I attended in 2022.</p>
+            <!-- =========== CAROUSEL CONTAINER ========
+			<div class="carousel-container"> -->
+				<!-- previous button -->
+				<!-- <div class="carousel-button previous"> -->
+					<!-- from linearicons icon font -->
+					<!-- <span class="lnr lnr-chevron-left"></span>
+				</div> -->
+				<!-- images -->
+				<!-- <div class="carousel-images">
+					<img src="portfolio-draft/images/birdle.png" alt="birdle game thumbnail" />
+					<img
+						src="portfolio-draft/images/gunnicorn.png"
+						alt="skateboard ecommerce page"
+					/>
+					<img
+						src="portfolio-draft/images/game-chief.png"
+						alt="game-chief thumbnail"
+					/>
+					<img src="portfolio-draft/images/landscaper.png" alt="landscaper game thumbnail" />
+				</div> -->
+				<!-- next button -->
+				<!-- <div class="carousel-button next"> -->
+					<!-- from linearicons icon font -->
+					<!-- <span class="lnr lnr-chevron-right"></span> -->
+				<!-- </div> -->
+			<!-- </div> -->
+            <a class="img-link" href="https://birdlegame.herokuapp.com"> 
+                <img id="landscaper" src="portfolio-draft/images/birdle.png"></a>
+                <h2>Birdle</h2>
+                <p class="blurb">A clone of Wordle built with Typescript and React that uses 8 letter bird names. <a href="https://github.com/xtopherman/birdle-front">github</a></p>
+                <br/><br/>
+            <a class="img-link" href="https://gunnicornskate.herokuapp.com"> 
+            <img id="landscaper" src="portfolio-draft/images/gunnicorn.png"></a>
+            <h2>Gunnicorn Skateboards</h2>
+            <p class="blurb">This is an ecommerce skateboard website that came about as a group project at General Assembly. It was built with React, Django, and Postgres. I created the backend and built out the user login functionality. <a href="https://github.com/xtopherman/project4-backend/tree/main/project4_rest_api">github</a></p>
+            <br/><br/>
+            <a class="img-link" href="https://gamechief.herokuapp.com"> 
+                <img id="landscaper" src="portfolio-draft/images/game-chief.png"></a>
+                <h2>Game Chief</h2>
+                <p class="blurb">An application I co-developed that helps you select a video game to play based on a series of questions. It utilizes a third-party API for information on games, and allows users to upload custom lists of game recommendations. Built with MongoDB, Express.js, and React. <a href="https://github.com/xtopherman/game-chief-front">github</a></p>
+                <br/><br/>
+                <a class="img-link" href="./portfolio-draft/Landscaper/index.html"> 
+                    <img id="landscaper" src="portfolio-draft/images/landscaper.png"></a>
+                    <h2>Landscaper</h2>
+                    <p class="blurb">This is a browser based landscaping sim that started as a terminal based game. It was developed with the help of fellow participants in the General Assembly cohort I attended in 2022.</p><br/><br/>
 
         </div>
     </section>
